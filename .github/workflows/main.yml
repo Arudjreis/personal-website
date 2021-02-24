@@ -19,10 +19,6 @@ jobs:
       uses: peaceiris/actions-hugo@v2
       with:
         hugo-version: '0.63.2'
-        
-    # Builds ayoubfandi.com repo
-    - name: Build
-      run: hugo --minify
       
       # Deploys built website to S3
     - name: Deploy to S3
